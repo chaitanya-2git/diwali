@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+    <style>
+        h2{
+            text-align: center;
+        }
+        .green{
+            color: green;
+        }
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+        .images{
+            display: flex;
+            margin: 12px;
+            padding: 10px;
+        }
+    </style>
+
+     
+</head>
+<body>
+
+   <h2>Happy diwali</h2>
+    <div>
+      <p>Diwali, also known as Deepavali, is one of the most celebrated festivals in India and among Hindu communities worldwide. This vibrant festival signifies the victory of light over darkness and good over evil. The name "Diwali" is derived from the Sanskrit word "Deepavali," which means "a row of lights."
+
+         The festival typically lasts five days, with each day holding its own significance. The first day, known as Dhanteras, is dedicated to wealth and prosperity. People clean their homes and buy new utensils or gold, believing it brings good fortune.
+        
+        <p class="green">The second day is Naraka Chaturdashi, or Choti Diwali. It commemorates the victory of Lord Krishna over the demon Narakasura. On this day, people light small oil lamps called diyas to ward off negativity.</p>
+        
+        The main day of Diwali is celebrated with great enthusiasm. Homes are adorned with colorful rangoli designs, and diyas are lit in every corner. Fireworks illuminate the night sky, filling it with joy and excitement. Families gather for prayers, offering their gratitude to Goddess Lakshmi, the goddess of wealth.
+        
+        <p class="red">on this day, it’s customary to exchange sweets and gifts with friends and family. Popular treats include ladoos, barfis, and jalebis. The air is filled with laughter, and the spirit of togetherness thrives.</p>
+        
+        The fourth day, known as Govardhan Puja, honors Lord Krishna and his lifting of the Govardhan Hill to protect villagers from rain. People prepare a large mound of food as an offering, symbolizing gratitude.
+        
+        The fifth and final day, Bhai Dooj, celebrates the bond between brothers and sisters. Sisters pray for their brothers' well-being, and brothers express their love by giving gifts.
+        
+        Diwali transcends religious boundaries, promoting unity and joy. Communities come together to celebrate, regardless of background, sharing the spirit of harmony and goodwill.
+        
+        <p class="blue">Inrecent years, there’s been a growing awareness of environmental concerns. Many have opted for eco-friendly celebrations, using sustainable materials and minimizing firecrackers to reduce pollution.</p>
+        
+        Traditions vary across regions, with each state adding its unique flavor to the festivities. In South India, for instance, the festival is marked by unique rituals and traditional delicacies, while in North India, the focus is on the lighting of lamps and fireworks.</p>
+      </div>
+        <div class="images">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7trbcSPenf_oeGYGW3kkSr6GA6OdkM30tgw&s" alt="diwali">
+        
+            <img src="https://tse1.mm.bing.net/th?id=OIP.ozGru2Ig74A3rMiZWpRxDAHaHa&pid=Api&rs=1&c=1&qlt=95&w=98&h=98">
+
+            <img src="https://tse1.mm.bing.net/th?id=OIP.TerQmTrXoGqV5RSrWCW8zwHaJ3&pid=Api&rs=1&c=1&qlt=95&w=73&h=98">
+        
+            <img src="https://tse1.mm.bing.net/th?id=OIP.yL1PeCAD8I3ZIZMcynrsmAHaHa&pid=Api&rs=1&c=1&qlt=95&w=109&h=109">
+        </div>
+        
+</body>
+<script>
+    function launchConfetti() {
+    const duration = 7 * 1000; // 10 seconds
+    const end = Date.now() + duration;
+    const colors = ['#ffeb3b', '#8F00FF', '#ff5722', '#4caf50', '#FFFFFF',"#000000"];
+    (function frame() {
+        confetti({
+            particleCount: 6, // Reduced number of particles
+            startVelocity: 80,
+            spread: 450,
+            ticks: 190,
+            origin: { x: 0.5, y: 0.5 }, // Start from top center
+            colors: colors,
+        });
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    }());
+}
+window.onload = function() {
+    launchConfetti();
+}
+</script>
+</html>

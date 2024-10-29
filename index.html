@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <style>
+        body{
+            background-size: cover;
+            min-height: 100vh;
+            background-image: url(data:image/jpeg;base64,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);
+        }
+        .form-field{
+            margin: 10px;
+        }
+        .form-field input,.form-btn{
+            padding: 10px;
+            width: 80%;
+        }
+        .form-btn{
+            margin: 10px;
+        }
+        .parent-container{
+            background-color: bisque;
+            width: 36%;
+            text-align: center;
+            margin: auto;
+            padding: 2%;
+            margin-top: 2%;
+            border-radius: 10px;
+        }
+        .heading{
+          color: brown;
+        }
+        @media (max-width:430px){
+            .parent-container{
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <form class="parent-container" action="login.html" >
+        <h2 class="heading">Registation form</h2>
+        <div class="form-field">
+            <input type="username"
+            name="username"
+            required
+            placeholder="enter username"/>
+        </div>
+        <div class="form-field">
+            <input type="password"
+            name="password"
+            required
+            placeholder="enter password"/>
+        </div>
+        <div class="form-field">
+            <input type="password"
+            name="confrm password"
+            required
+            placeholder="confrm password"/>
+        </div>
+        <div class="form-field">
+            <input type="number"
+            name="number"
+            required
+            placeholder="number"/>
+        </div>
+        <button class="form-btn">submit</button>
+
+    </form>
+</body>
+</html>
